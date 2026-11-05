@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Admin Dashboard | ERHTCI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <a href="index.html"><img class="nav-logo" src="erhtci-logo.jpg" alt="ERHTCI Feedback Portal"></a>
+    <nav class="nav-links"><a class="" href="index.html">HOME</a><a class="" href="feedbacks.html">RECENT
+        FEEDBACKS</a><a class="" href="profile.html">PROFILE</a><a class="" href="about.html">ABOUT</a></nav>
+  </header>
+  <main class="container">
+    <section class="section-head">
+      <div class="kicker">AUTHORIZED STAFF</div>
+      <h1 class="section-title">ADMIN DASHBOARD</h1>
+      <div class="crown-line"><span></span><b class="crown">♛</b><span></span></div>
+      <p>Review and respond to submitted feedback and complaints.</p>
+      <p class="admin-welcome" id="adminWelcome" aria-live="polite"></p>
+    </section>
+    <section class="admin-stats">
+      <div class="stat-card"><small>PENDING</small><strong id="pendingCount">0</strong></div>
+      <div class="stat-card"><small>UNDER REVIEW</small><strong id="reviewCount">0</strong></div>
+      <div class="stat-card"><small>RESOLVED</small><strong id="resolvedCount">0</strong></div>
+      <div class="stat-card"><small>TOTAL REPORTS</small><strong id="totalCount">0</strong></div>
+    </section>
+    <section class="admin-layout">
+      <article class="card">
+        <div class="filter-bar">
+          <select class="select" id="adminCategory">
+            <option>All</option>
+            <option>Facilities</option>
+            <option>Instruction</option>
+            <option>Instructor</option>
+            <option>Operations</option>
+            <option>Administration</option>
+            <option>Student</option>
+            <option>Faculty Staff</option>
+          </select>
+          <select class="select" id="adminStatus">
+            <option>All</option>
+            <option>Pending</option>
+            <option>Under Review</option>
+            <option>Resolved</option>
+          </select>
+        </div>
+        <div class="issue-list" id="issueList"></div>
+      </article>
+      <aside class="card">
+        <h3>Resolution Guide</h3>
+        <p style="color:#527c9e;line-height:1.55;font-size:14px">Review the report, update its status, and provide a response to the user.</p>
+        <div class="status-list" style="justify-content:flex-start"><span class="status pending">Pending</span><span
+            class="status review">Under Review</span><span class="status resolved">Resolved</span></div>
+        <hr style="border:0;border-top:1px solid #d7e8f6;margin:22px 0"><button class="ghost-btn" id="logout">LOG
+          OUT</button>
+      </aside>
+    </section>
+  </main>
+  <footer class="footer">© 2026 El Royale Hotelier Training Center Inc. • Administrative Area</footer>
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>

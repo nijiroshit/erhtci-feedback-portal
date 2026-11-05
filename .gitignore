@@ -1,0 +1,4 @@
+/api/config.php
+/erhtci-staging.zip
+/uploads/*
+!/uploads/.htaccess

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Log In | ERHTCI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="form-page">
+        <section class="auth-card">
+            <div class="auth-top"><img class="auth-logo" src="erhtci-logo.jpg" alt="ERHTCI"></div>
+            <div class="auth-body">
+                <h1 class="auth-title">LOG IN</h1>
+                <p class="account-note">Sign in with your student ID or email address. Administrators use the same sign-in form; admin accounts are created privately by the system operator.</p>
+                <form id="loginForm">
+                    <div class="form-grid">
+                        <div class="field full"><label for="loginIdentifier">STUDENT ID OR EMAIL ADDRESS</label>
+                            <input class="input" id="loginIdentifier" autocomplete="username"
+                                placeholder="Student ID or name@example.com" required></div>
+                        <div class="field full"><label for="accountPassword">PASSWORD</label><input class="input" id="accountPassword"
+                            autocomplete="current-password"
+                            type="password" placeholder="Enter your password" required></div>
+                    </div>
+                    <div class="auth-action"><button class="primary-btn" type="submit">LOG IN</button></div>
+                </form>
+                <div class="auth-link"><a href="signup.html">CREATE AN ACCOUNT</a></div>
+            </div>
+        </section>
+    </div>
+    <div id="toast" class="toast"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

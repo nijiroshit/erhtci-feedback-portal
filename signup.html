@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Create Account | ERHTCI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="form-page">
+        <section class="auth-card">
+            <div class="auth-top"><img class="auth-logo" src="erhtci-logo.jpg" alt="ERHTCI"></div>
+            <div class="auth-body">
+                <h1 class="auth-title">CREATE ACCOUNT</h1>
+                <form id="signupForm">
+                    <div class="form-grid">
+                        <div class="field full"><label for="fullName">FULL NAME</label><input class="input"
+                                id="fullName" placeholder="Enter your full name" required></div>
+                        <div class="field full"><label for="role">ROLE</label><select class="select" id="role" required>
+                                <option value="">Select role</option>
+                                <option>Student</option>
+                                <option>Staff</option>
+                                <option>Instructor</option>
+                            </select></div>
+                        <div class="field full" id="idNumberField"><label for="idNumber">ID NUMBER</label><input
+                                class="input" id="idNumber" placeholder="DMF 12 678 09876 765"
+                                pattern="[A-Za-z]{3}\s\d{2}\s\d{3}\s\d{5}\s\d{3}"
+                                title="Use format like DMF 12 678 09876 765" disabled></div>
+                        <div class="field full" id="emailField"><label for="email">EMAIL ADDRESS</label><input
+                                class="input" id="email" type="email" placeholder="name@example.com" autocomplete="username" disabled></div>
+                        <div class="field" id="passwordField"><label for="password">PASSWORD</label><input class="input"
+                            id="password" type="password" minlength="12" autocomplete="new-password" placeholder="At least 12 characters" required>
+                            <small>At least 12 characters; maximum 72 UTF-8 bytes.</small>
+                        </div>
+                        <div class="field" id="confirmPasswordField"><label for="confirmPassword">CONFIRM
+                            PASSWORD</label><input class="input" id="confirmPassword" type="password" minlength="12" autocomplete="new-password"
+                            placeholder="Confirm password" required></div>
+                    </div>
+                    <div class="auth-action"><button class="primary-btn" type="submit">CREATE ACCOUNT</button></div>
+                </form>
+                <div class="auth-link"><a href="login.html">ALREADY HAVE AN ACCOUNT?</a></div>
+            </div>
+        </section>
+    </div>
+    <div id="toast" class="toast"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

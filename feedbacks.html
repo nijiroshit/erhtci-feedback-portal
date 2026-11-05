@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Recent Feedbacks | ERHTCI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <a href="index.html"><img class="nav-logo" src="erhtci-logo.jpg" alt="ERHTCI Feedback Portal"></a>
+    <nav class="nav-links"><a class="" href="index.html">HOME</a><a class="active" href="feedbacks.html">RECENT
+        FEEDBACKS</a><a class="" href="profile.html">PROFILE</a><a class="" href="about.html">ABOUT</a></nav>
+  </header>
+  <main class="container">
+    <section class="section-head">
+      <div class="kicker">R E C E N T</div>
+      <h1 class="section-title">FEEDBACKS</h1>
+      <div class="crown-line"><span></span><b class="crown">♛</b><span></span></div>
+      <p>Real thoughts. Better learning.<br>View feedback, progress status, and administrator responses.</p>
+    </section>
+    <section id="feedbackGrid" class="feedback-grid"></section>
+    <section class="submit-panel" id="submit">
+      <div class="submit-intro">
+        <div class="feature-icon">📣</div>
+        <h2>Share Your Feedback</h2>
+        <p>Your feedback helps us improve and create a better learning experience for everyone.</p>
+      </div>
+      <form class="feedback-form" id="feedbackForm">
+        <div><label for="comment">YOUR COMMENT</label><textarea class="textarea" id="comment" maxlength="500"
+            placeholder="Tell us what you think, share your experience, or suggest improvements..." required></textarea>
+        </div>
+        <div class="submit-action"><button class="primary-btn" type="submit">SUBMIT FEEDBACK&nbsp; →</button></div>
+        <div class="identity"><label>CHOOSE YOUR IDENTITY</label>
+          <div class="identity-options">
+            <label><input type="radio" name="identity" value="anonymous" checked> Anonymous</label><label><input
+                type="radio" name="identity" value="reveal"> Reveal Identity</label>
+          </div>
+        </div>
+        <div><label for="category">CATEGORY</label><select class="select" id="category">
+            <option>Facilities</option>
+            <option>Instruction</option>
+            <option>Instructor</option>
+            <option>Operations</option>
+            <option>Administration</option>
+            <option>Student</option>
+            <option>Faculty Staff</option>
+          </select></div>
+        <div class="field full photo-box">
+          <label for="feedbackImage">ATTACH IMAGE</label>
+          <div class="file-upload">
+            <label class="file-btn" for="feedbackImage">Choose File</label>
+            <span class="file-name" id="fileName">No file chosen</span>
+            <input type="file" id="feedbackImage" accept=".jpg,.jpeg,.png,.webp,image/jpeg,image/png,image/webp">
+          </div>
+          <small>Optional. Attach a JPG, PNG, or WebP image up to 5 MB.</small>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">© 2026 El Royale Hotelier Training Center Inc.</footer>
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
